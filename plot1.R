@@ -17,5 +17,5 @@ power_cons$Time <- strptime(paste(power_cons$Date, power_cons$Time), "%Y-%m-%d %
 hist(power_cons$Global_active_power, main = "Global Active Power", col = "Red", xlab = "Global Active Power (kilowatts)", ylab = "Frequency")
 
 ## output in PNG file format
-png(file = "plot1.png", width = 480, height = 480)
+dev.copy(png, file = "plot1.png", width = 480, height = 480)
 dev.off()

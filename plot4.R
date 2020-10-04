@@ -23,5 +23,5 @@ with(power_cons, plot(Time, Global_reactive_power, type = "l",
                       xlab = "datetime", ylab = "Global_reactive_power"))
 
 ## output in PNG file format
-png(file = "plot4.png", width = 480, height = 480)
+dev.copy(png, file = "plot4.png", width = 480, height = 480)
 dev.off()
